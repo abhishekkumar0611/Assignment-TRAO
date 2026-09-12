@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-        "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
-    "test": "jest"
-
+    "scripts": {
+  "dev": "nodemon index.js",
+  "start": "node index.js",
+  "test": "jest"
+}
   },
   "keywords": [],
   "author": "",

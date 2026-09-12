@@ -1701,22 +1701,7 @@ Before submission, verify:
 [ ] JD + company URL generates a kit
 [ ] Company site is actually crawled
 [ ] Hiring information is discovered without hard-coded paths
-[ ] Public interview research is attempted
-[ ] Failed sources are handled gracefully
-[ ] Requirement extraction works
-[ ] Questions reference requirement IDs
-[ ] Coverage is checked
-[ ] Second pass works
-[ ] Flashcards work
-[ ] Schedule has exactly requested days
-[ ] Every must-have is represented
-[ ] Editing works
-[ ] Reordering works
-[ ] Add/delete works
-[ ] Section regeneration works
-[ ] User edits survive regeneration
-[ ] Practice mode works
-[ ] Confidence is recorded
+[ ] Failed sources are handled gracefull[ ] Confidence is recorded
 [ ] Batch command works
 [ ] Batch command uses the same pipeline
 [ ] Batch continues after individual failures
@@ -1905,3 +1890,895 @@ The application decides:
 * Whether a user can access a particular kit.
 
 This provides a more predictable and testable system while still using AI where it provides the most value.
+
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
+## Future Implementations
+
+The following features are planned for future versions of the application:
+
+### 1. Advanced Authentication & User Management
+
+* Google/GitHub OAuth authentication.
+* Password reset and email verification.
+* User profile and account management.
+* Role-based access control for additional user roles.
+
+### 2. Advanced Interview Kit Customization
+
+* Allow users to select specific question categories before generation.
+* Customize the number of questions generated.
+* Select preparation difficulty levels.
+* Allow users to customize preparation time and daily study duration.
+
+### 3. Improved Company Research
+
+* Expand company research across additional public sources.
+* Improve source relevance ranking.
+* Add more detailed company and technology summaries.
+* Cache research results to reduce repeated crawling and API calls.
+
+### 4. Advanced AI Question Generation
+
+* Improve question generation using additional company and role context.
+* Generate more personalized follow-up questions.
+* Generate role-specific system design and scenario-based questions.
+* Improve question difficulty classification.
+
+### 5. Adaptive Interview Preparation
+
+* Track user performance during practice sessions.
+* Identify weak areas based on confidence and practice results.
+* Automatically recommend questions based on weak requirements.
+* Dynamically adjust the preparation plan based on user progress.
+
+### 6. Advanced Flashcard System
+
+* Implement spaced-repetition based revision.
+* Track flashcard performance over multiple sessions.
+* Automatically prioritize difficult flashcards.
+* Provide personalized revision recommendations.
+
+### 7. Mock Interview Mode
+
+* Add a complete mock interview experience.
+* Simulate technical, behavioural, and company-specific interviews.
+* Provide AI-generated follow-up questions.
+* Provide feedback and improvement suggestions after each session.
+
+### 8. Analytics Dashboard
+
+* Track preparation progress.
+* Display question completion statistics.
+* Track flashcard confidence and revision history.
+* Show requirement coverage and weak areas.
+* Provide overall preparation progress reports.
+
+### 9. Real-Time Progress Updates
+
+* Show real-time generation progress for long-running kit generation.
+* Display individual pipeline stages such as:
+
+  * Requirement extraction
+  * Company research
+  * Interview research
+  * Question generation
+  * Coverage checking
+  * Flashcard generation
+  * Schedule generation
+
+### 10. Scalability Improvements
+
+* Background job processing for kit generation.
+* Queue-based processing for batch evaluation.
+* Caching for frequently accessed research data.
+* Rate limiting and improved API resource management.
+* Additional monitoring and logging.
+
+### 11. Additional Testing
+
+* Increase unit and integration test coverage.
+* Add end-to-end tests for the complete user workflow.
+* Add automated tests for crawler edge cases.
+* Add more batch evaluation test cases.
+* Add performance and load testing.
+
+### 12. Deployment & Production Improvements
+
+* Add CI/CD pipelines.
+* Automated testing during deployment.
+* Production monitoring and error tracking.
+* Improved logging and observability.
+* Automated database backup and recovery strategies.
+
+> These features are planned enhancements and are not part of the current implementation. They may be introduced in future versions based on product requirements and user feedback.
