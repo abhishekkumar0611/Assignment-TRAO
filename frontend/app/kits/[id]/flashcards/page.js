@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 
 import Navbar from "@/components/Navbar";
 import Loading from "@/components/Loading";
-import Flashcard from "@components/flashCard";
+import Flashcard from "@components/Flashcard";
 import { apiFetch } from "@/lib/api";
 
 export default function FlashcardsPage() {
