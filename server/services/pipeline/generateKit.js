@@ -8,7 +8,7 @@ const {
 
 const {
   generateFlashcards
-} = require("../generation/flashcards");
+} = require("../generation/flashcard");
 
 const {
   crawlCompany
@@ -63,26 +63,11 @@ async function generateKit({
   // 4. Generate questions
   // -------------------------
 
-  let questions = [];
-
-  for (const requirement of role.requirements) {
-    const category =
-      requirement.kind === "technical"
-        ? "technical"
-        : requirement.kind === "behavioural"
-          ? "behavioural"
-          : "company-fit";
-
-    const generated =
-      await generateQuestions({
-        requirement,
-        companyResearch,
-        interviewResearch,
-        category
-      });
-
-    questions.push(...generated);
-  }
+  const questions = await generateQuestions({
+  requirements: role.requirements,
+  companyResearch,
+  interviewResearch
+});
 
   // -------------------------
   // 5. Coverage check
@@ -108,21 +93,16 @@ async function generateKit({
             .includes(requirement.id)
       );
 
-    for (const requirement of gaps) {
-      const generated =
-        await generateQuestions({
-          requirement,
-          companyResearch,
-          interviewResearch,
-          category: "technical"
-        });
+    const generated = await generateQuestions({
+  requirements: gaps,
+  companyResearch,
+  interviewResearch
+});
 
-      questions.push(...generated);
-    }
+questions.push(...generated);
 
     coverage =
       checkCoverage(
-        role.requirements,
         questions
       );
   }
